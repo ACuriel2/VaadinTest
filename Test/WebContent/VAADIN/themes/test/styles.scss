@@ -1,0 +1,28 @@
+@import "addons.scss";
+@import "test.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in test.scss */
+.test {
+  @include addons;
+  @include test;
+}
+
+.infoFiscalTitle, .domFiscalTitle, .newCSDText, .v-panel .v-panel-caption{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.newCSDText{
+  margin-right: 10px;
+}
+
+.buttonsLayout{
+  text-align: right;
+  width: 100%;
+  padding: 30px;
+}
+
+.v-formlayout-captioncell{
+  text-align: right;
+}
