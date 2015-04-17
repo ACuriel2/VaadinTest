@@ -1,5 +1,7 @@
 package com.example.test;
 
+import java.util.Date;
+
 import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
@@ -64,7 +66,7 @@ public class CsdWindowBuilder {
 
 			@Override
 			public void buttonClick(final ClickEvent event) {
-				cerUpload.startUpload();
+				updaterBean.updateTable(new CsdBean("Tet1", new Date(), new Date()));
 			}
 		});
 	}
