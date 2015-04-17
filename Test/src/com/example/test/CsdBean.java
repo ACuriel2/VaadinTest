@@ -1,26 +1,29 @@
 package com.example.test;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class CsdBean {
-	
+public class CsdBean implements Serializable {
+
+	private static final long serialVersionUID = 8166187197911698097L;
+
 	private String numeroSerie;
-	
+
 	private Date validoDe;
-	
+
 	private Date validoHasta;
-	
+
 	public CsdBean(final String numeroSerie, final Date validoDe, final Date validoHasta) {
 		this.numeroSerie = numeroSerie;
 		this.validoDe = validoDe;
-		this.validoHasta =validoHasta;
+		this.validoHasta = validoHasta;
 	}
-	
+
 	public String getNumeroSerie() {
 		return numeroSerie;
 	}
 
-	public void setNumeroSerie(String numeroSerie) {
+	public void setNumeroSerie(final String numeroSerie) {
 		this.numeroSerie = numeroSerie;
 	}
 
@@ -28,7 +31,7 @@ public class CsdBean {
 		return validoDe;
 	}
 
-	public void setValidoDe(Date validoDe) {
+	public void setValidoDe(final Date validoDe) {
 		this.validoDe = validoDe;
 	}
 
@@ -36,7 +39,7 @@ public class CsdBean {
 		return validoHasta;
 	}
 
-	public void setValidoHasta(Date validoHasta) {
+	public void setValidoHasta(final Date validoHasta) {
 		this.validoHasta = validoHasta;
 	}
 
