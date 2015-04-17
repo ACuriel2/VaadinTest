@@ -18,10 +18,14 @@ public class CsdWindowBuilder {
 		csdWindow.setResizable(false);
 		csdWindow.setModal(true);
 		csdWindow.setDraggable(false);
+				
+		FileUploader receiver = new FileUploader();		
+		Upload upload = new Upload("Carga archivo", receiver);
+		upload.setButtonCaption("Start Upload");
+		upload.addSucceededListener(receiver);
 		
-		Label title = new Label("hola");
 		FormLayout subWindowLayout = new FormLayout();
-		subWindowLayout.addComponent(title);
+		subWindowLayout.addComponent(upload);
 		
 		
 		
