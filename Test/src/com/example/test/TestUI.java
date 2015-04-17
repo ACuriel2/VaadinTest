@@ -60,7 +60,7 @@ public class TestUI extends UI {
 		verticalBody.addComponent(horizontalBody);		
 		
 		Panel configurationListContainer = new Panel("Configuración");
-		configurationListContainer.setHeight(100, Sizeable.UNITS_PERCENTAGE);
+		configurationListContainer.setHeight(100, Unit.PERCENTAGE);
 		configurationListContainer.setWidth("250px");
 		horizontalBody.addComponent(configurationListContainer);
 		

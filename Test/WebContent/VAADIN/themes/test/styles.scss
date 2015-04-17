@@ -23,6 +23,14 @@
   padding: 30px;
 }
 
+.csdWindow{
+  font-weight: bold;	
+}
+
 .v-formlayout-captioncell{
   text-align: right;
+}
+
+.v-upload .v-button {
+  display: none !important;
 }
