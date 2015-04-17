@@ -3,6 +3,9 @@
 	<settings defaultResolver="default" />
 	<resolvers>
 		<chain name="default">
+			
+			<ibiblio name="nexus" m2compatible="true" root="http://10.0.9.132:8081/nexus/content/groups/public/"/>
+		
 			<!-- Public Maven repository -->
 			<ibiblio name="public" m2compatible="true" />
 
